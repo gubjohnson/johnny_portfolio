@@ -31,3 +31,13 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+
+//Set wechat button
+const wechat = document.querySelector('.wechat');
+const wechatBtn = document.querySelector('.wechatBtn');
+
+wechat.addEventListener('click', wechatShow);
+
+function wechatShow(){
+    wechatBtn.classList.add('show');
+}
