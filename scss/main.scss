@@ -66,6 +66,18 @@ main {
                     color: $secondary-color;
                     @include easeOut();
                 }
+
+                
+            }
+
+            .wechatBtn {
+                visibility: hidden;
+                color: $secondary-color;
+
+
+                &.show {
+                    visibility: visible;
+                }
             }
         }
     }
