@@ -7,9 +7,22 @@
 
 //Desktop & Laptops
 @include mediaLg {
+    .about-info {
+        
+
+        grid-template-areas:
+        'bioimage bio'
+        'job1 job1'
+        'job2 job2'
+        'job3 job3';
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
     .projects {
         grid-template-columns: repeat(3, 1fr);
     }
+
 }
 
 //Tablets & Small Laptops
@@ -55,6 +68,16 @@
     }
 
     .about-info {
+        .bio>p {
+            font-size: 1.2rem;
+            text-align: left;
+        }
+
+        .job>p{
+            font-size: 1.2rem;
+            text-align: left;
+        }
+
         grid-template-areas:
             'bioimage'
             'bio'
@@ -74,6 +97,23 @@
     main#home h1 {
         margin-top: 10vh;
         font-size: 4rem;
+    }
+
+    .about-info {
+        .bio-image {
+            width: 150px;
+            height: 150px;
+        }
+
+        .bio>p {
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        .job>p{
+            font-size: 0.85rem;
+            text-align: left;
+        }
     }
 
     .projects {

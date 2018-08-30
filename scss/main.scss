@@ -29,7 +29,7 @@ h3 {
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color, $amount: 2), 0.5);
+        background: rgba(lighten($primary-color, $amount: 5), 0.5);
     }
 }
 
@@ -92,11 +92,13 @@ main {
         margin: auto;
         border-radius: 50%;
         border: solid 3px $secondary-color;
+        width: 200px;
+        height: 200px;
     }
 
     .bio {
         grid-area: bio;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .job-1 {
@@ -109,11 +111,21 @@ main {
 
     .job-3 {
         grid-area: job3;
+
+        .edu {
+            .edu1, .edu2{
+                border-bottom: 1px solid $secondary-color;
+            }
+        }
     }
 
     .job {
         background: lighten($color: $primary-color, $amount: 5);
         border-bottom: solid 3px $secondary-color;
+        padding: 5px 10px;
+
+        
+        
     }
 }
 
