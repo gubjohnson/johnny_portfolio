@@ -90,6 +90,12 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .boxes {
+        div {
+            padding: 0.4rem;
+        }
+    }
 }
 
 //Smartphones
@@ -122,5 +128,12 @@
 
     .projects {
         grid-template-columns: 1fr;
+    }
+
+    .boxes {
+        div {
+            padding: 1rem;
+            font-size: 1.25rem;
+        }
     }
 }

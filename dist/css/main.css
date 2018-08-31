@@ -303,7 +303,9 @@ main {
       font-size: 1.2rem;
       text-align: left; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes div {
+    padding: 0.4rem; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -321,4 +323,7 @@ main {
     font-size: 0.85rem;
     text-align: left; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .boxes div {
+    padding: 1rem;
+    font-size: 1.25rem; } }
