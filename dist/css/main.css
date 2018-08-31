@@ -155,11 +155,17 @@ main {
         main .icons a i:hover {
           color: #38f08a;
           transition: all 0.5s ease-out; }
-      main .icons a .wechatBtn {
-        visibility: hidden;
-        color: #38f08a; }
-        main .icons a .wechatBtn.show {
-          visibility: visible; }
+  main .wechatText {
+    visibility: hidden;
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    background: #38f08a; }
+    main .wechatText.show {
+      visibility: visible;
+      display: inline-block; }
   main#home {
     overflow: hidden; }
     main#home h1 {

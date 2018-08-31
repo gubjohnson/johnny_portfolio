@@ -65,20 +65,24 @@ main {
                 &:hover {
                     color: $secondary-color;
                     @include easeOut();
-                }
+                }                
+            }            
+        }
+    }
 
-                
-            }
+    .wechatText {
+        visibility: hidden;
+        position: relative;
+        padding: 0.75rem 1.25rem;
+        margin-bottom: 1rem;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        background: $secondary-color;
 
-            .wechatBtn {
-                visibility: hidden;
-                color: $secondary-color;
 
-
-                &.show {
-                    visibility: visible;
-                }
-            }
+        &.show {
+            visibility: visible;
+            display: inline-block;
         }
     }
 
