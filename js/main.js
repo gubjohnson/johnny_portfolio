@@ -34,10 +34,10 @@ function toggleMenu() {
 
 //Set wechat button
 const wechat = document.querySelector('.wechat');
-const wechatBtn = document.querySelector('.wechatBtn');
+const wechatText = document.querySelector('.wechatText');
 
 wechat.addEventListener('click', wechatShow);
 
 function wechatShow(){
-    wechatBtn.classList.add('show');
+    wechatText.classList.add('show');
 }
